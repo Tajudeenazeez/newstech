@@ -1,13 +1,33 @@
 let createComment;
 let news= {};
+let id=[];
+let data=[];
+//const url = "https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/"
 
+//let url_str = 'http://demo.com?id=100&cat=js';
+
+//let url = new URL(url_str);
+//let search_params = url.searchParams;
+
+// get value of "id" parameter
+// "100"
+//console.log(search_params.get('id'));
+
+// let urlIds = new URL(url);
+// let search_params = urlIds.searchParams;
+
+//  id = search_params.getAll('id');
+
+// // ["js", "ui", "css"]
+// console.log(id);
 
 const aNews =(id) => fetch(`${url}/news/${id}`)
+
   .then(response => response.json())
   .then(json => {
-    console.log(json)
+    //console.log(json)
     news = json
-    console.log(news)
+    //console.log(news)
 
     singleNews();
     makeComment();

@@ -58,11 +58,11 @@ const displayNews = () => {
   .map((dat, index) => 
   `<article>  
         <header> 
-          <a href= /news/${dat.id}/singleNews.html>
+          <a href= /${dat.id}/singleNews.html>
           <img src=${dat.avatar} alt= image />
           </a> 
         <h1> 
-          <a href= /news/${dat.id}/singleNews.html> ${dat.title}</a> 
+          <a href= /${dat.id}/singleNews.html> ${dat.title}</a> 
         </h1>
       </header>
       <h3> Author: ${dat.author}</h3> 
@@ -97,4 +97,3 @@ const showError = () => {
     "</p>"
   );
 }
-
